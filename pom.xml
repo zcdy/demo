@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.zhongan.test</groupId>
+  <artifactId>demo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>demo</name>
+  <url>http://maven.apache.org</url>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.0.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+        <!--esper依赖-->
+        <dependency>
+            <groupId>com.espertech</groupId>
+            <artifactId>esper</artifactId>
+            <version>7.1.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>    
+		<dependency>
+  			<groupId>com.alibaba</groupId>
+  			<artifactId>fastjson</artifactId>
+  			<version>1.2.67</version>
+		</dependency>
+		<!-- apache shiro框架的依赖 -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-aspectj</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-cas -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-cas</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-core -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-core</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-ehcache -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-ehcache</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-guice -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-guice</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-quartz -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-quartz</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-spring -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro.tools/shiro-tools-hasher -->
+		<dependency>
+			<groupId>org.apache.shiro.tools</groupId>
+			<artifactId>shiro-tools-hasher</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-web -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>		
+	        
+  </dependencies>
+</project>
